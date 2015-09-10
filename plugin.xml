@@ -3,23 +3,23 @@
         id="com.mapworxxell.onefourone"
         version="0.7.10">
 
-  <name>Xell</name>
-  <description>Xell</description>
+  <name>onefourone</name>
+  <description>onefourone</description>
 
-  <asset src="www/hello.js" target="js/hello.js"/>
+  <asset src="www/onefourone.js" target="js/onefourone.js"/>
 
-  <js-module src="www/hello.js" name="hello">
-    <clobbers target="hello" />
+  <js-module src="www/onefourone.js" name="onefourone">
+    <clobbers target="onefourone" />
   </js-module>
 
   <platform name="android">
 
     <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="Hello">
-        <param name="android-package" value="com.mapworxxell.onefourone.Hello"/>
+      <feature name="onefourone">
+        <param name="android-package" value="com.mapworxxell.onefourone.onefourone"/>
       </feature>
     </config-file>
 
-    <source-file src="src/android/Hello.java" target-dir="src/com/mapworxxell/onefourone/"/>
+    <source-file src="src/android/onefourone.java" target-dir="src/com/mapworxxell/onefourone"/>
   </platform>
 </plugin>
