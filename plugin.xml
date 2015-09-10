@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-        id="com.example.hello"
+        id="com.mapworxxell.onefourone"
         version="0.7.0">
 
-  <name>Hello</name>
+  <name>Xell</name>
 
   <engines>
     <engine name="cordova" version=">=3.4.0"/>
@@ -19,7 +19,7 @@
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="Hello">
-        <param name="android-package" value="com.example.plugin.Hello"/>
+        <param name="android-package" value="com.mapworxxell.onefourone.Hello"/>
       </feature>
     </config-file>
 
