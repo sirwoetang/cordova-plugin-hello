@@ -4,6 +4,7 @@
         version="0.7.0">
 
   <name>Xell</name>
+  <description>Xell</description>
 
   <engines>
     <engine name="cordova" version=">=3.4.0"/>
