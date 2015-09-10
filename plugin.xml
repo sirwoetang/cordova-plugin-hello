@@ -6,10 +6,6 @@
   <name>Xell</name>
   <description>Xell</description>
 
-  <engines>
-    <engine name="cordova" version=">=3.4.0"/>
-  </engines>
-
   <asset src="www/hello.js" target="js/hello.js"/>
 
   <js-module src="www/hello.js" name="hello">
@@ -24,6 +20,6 @@
       </feature>
     </config-file>
 
-    <source-file src="src/android/Hello.java" target-dir="src/com/example/plugin/"/>
+    <source-file src="src/android/Hello.java" target-dir="src/com/mapworxxell/onefourone/"/>
   </platform>
 </plugin>
