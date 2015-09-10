@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
         id="com.mapworxxell.onefourone"
-        version="0.7.12">
+        version="0.7.13">
 
   <name>onefourone</name>
   <description>onefourone</description>
