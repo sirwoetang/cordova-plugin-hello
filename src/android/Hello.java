@@ -13,11 +13,10 @@ public class Hello extends CordovaPlugin {
     @Override
     public boolean execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {
 
-        if (action.equals("greet")) {
+        if (action.equals("record")) {
 
             String name = data.getString(0);
             String message = "Hello, " + name;
-            callbackContext.success(message);
 
             Intent intent = new Intent("com.zello.ptt.down");
             intent.putExtra("com.zello.stayHidden", true);
@@ -26,6 +25,8 @@ public class Hello extends CordovaPlugin {
             return true;
 
         } else {
+            String name = data.getString(0);
+            String message = "STOP, " + name;
 
             Intent intent = new Intent("com.zello.ptt.up");
             intent.putExtra("com.zello.stayHidden", true);
