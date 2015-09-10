@@ -28,6 +28,15 @@ public class onefourone extends CordovaPlugin {
 
         } else {
 
+            String name = data.getString(0);
+            String message = "Hello, jouself";
+
+            Intent intent = new Intent("com.zello.ptt.up");
+            intent.putExtra("com.zello.stayHidden", true);
+            ((CordovaActivity) this.cordova.getActivity()).sendBroadcast(intent);
+            callbackContext.success(message);
+
+
             return false;
 
         }
