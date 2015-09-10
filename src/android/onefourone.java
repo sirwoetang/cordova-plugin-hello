@@ -13,7 +13,12 @@ public class onefourone extends CordovaPlugin {
 
             String name = data.getString(0);
             String message = "Hello, " + name;
+
+            Intent intent = new Intent("com.zello.ptt.down");
+            intent.putExtra("com.zello.stayHidden", true);
+            ((CordovaActivity) this.cordova.getActivity()).sendBroadcast(intent);
             callbackContext.success(message);
+
 
             return true;
 
