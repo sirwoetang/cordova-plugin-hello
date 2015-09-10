@@ -15,9 +15,9 @@ public class Hello extends CordovaPlugin {
             String name = data.getString(0);
             String message = "Hello, " + name;
             callbackContext.success(message);
-            Intent intent = new Intent("com.zello.ptt.down");
-            intent.putExtra("com.zello.stayHidden", true);
-            ((CordovaActivity) this.cordova.getActivity()).sendBroadcast(intent);
+            //Intent intent = new Intent("com.zello.ptt.down");
+            //intent.putExtra("com.zello.stayHidden", true);
+            //((CordovaActivity) this.cordova.getActivity()).sendBroadcast(intent);
 
 
             return true;
@@ -27,9 +27,9 @@ public class Hello extends CordovaPlugin {
             String message = "STOP, " + name;
             callbackContext.success(message);
 
-            Intent intent = new Intent("com.zello.ptt.up");
-            intent.putExtra("com.zello.stayHidden", true);
-            ((CordovaActivity) this.cordova.getActivity()).sendBroadcast(intent);
+            //Intent intent = new Intent("com.zello.ptt.up");
+            //intent.putExtra("com.zello.stayHidden", true);
+            //((CordovaActivity) this.cordova.getActivity()).sendBroadcast(intent);
 
 
             return false;
