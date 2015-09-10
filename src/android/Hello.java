@@ -15,10 +15,19 @@ public class Hello extends CordovaPlugin {
             String message = "Hello, " + name;
             callbackContext.success(message);
 
+            Intent intent = new Intent("com.zello.ptt.down");
+            intent.putExtra("com.zello.stayHidden", true);
+            activity.sendBroadcast(intent);
+
             return true;
 
         } else {
+
+            Intent intent = new Intent("com.zello.ptt.up");
+            intent.putExtra("com.zello.stayHidden", true);
+            activity.sendBroadcast(intent);
             
+
             return false;
 
         }
