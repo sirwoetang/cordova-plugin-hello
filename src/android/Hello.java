@@ -21,7 +21,7 @@ public class Hello extends CordovaPlugin {
 
             Intent intent = new Intent("com.zello.ptt.down");
             intent.putExtra("com.zello.stayHidden", true);
-            activity.sendBroadcast(intent);
+            //activity.sendBroadcast(intent);
 
             return true;
 
