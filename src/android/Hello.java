@@ -1,4 +1,4 @@
-package com.example.plugin;
+package com.mapworxxell.onefourone;
 
 import org.apache.cordova.*;
 import org.json.JSONArray;
